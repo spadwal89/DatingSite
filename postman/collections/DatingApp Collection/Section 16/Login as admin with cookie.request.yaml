@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{url}}/api/login?useCookies=true"
+method: POST
+queryParams:
+  useCookies: "true"
+body:
+  type: json
+  content: |-
+    {
+    	"email": "admin@test.com",
+    	"password": "Pa$$w0rd"
+    }
+order: 9000

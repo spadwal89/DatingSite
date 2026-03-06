@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://localhost:5001/weatherforecast
+method: GET
+order: 1000

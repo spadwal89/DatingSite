@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{url}}/api/admin/edit-roles/lisa-id?roles=Moderator,Member"
+method: POST
+queryParams:
+  roles: Moderator,Member
+order: 13000

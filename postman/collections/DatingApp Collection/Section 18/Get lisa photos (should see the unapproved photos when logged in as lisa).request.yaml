@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/members/lisa-id/photos"
+method: GET
+order: 6000

@@ -2,9 +2,9 @@ using System;
 
 namespace API.Entities;
 
-public class Class
+public class AppUser
 {
- public string ID {get ;set;}=Guid.NewGuid().ToString();
- public required string DisplayName {get;set;}
- public required string Email {get;set;}
+ public string ID {get ; set;}=Guid.NewGuid().ToString();
+    public required string DisplayName{get;set;}
+    public required string EmailP{get;set;}
 }

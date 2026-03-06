@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{url}}/api/members/c8cffdd2-7e99-45ab-af07-ae80d8b9b562"
+method: GET
+headers:
+  Authorization: Bearer {{bob_token}}
+order: 13000

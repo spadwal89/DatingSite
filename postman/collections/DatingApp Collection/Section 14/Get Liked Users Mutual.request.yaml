@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{url}}/api/likes?predicate=mutual"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  predicate: mutual
+order: 7000

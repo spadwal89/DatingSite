@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{url}}/api/members?minAge=20&maxAge=29"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  minAge: "20"
+  maxAge: "29"
+order: 7000

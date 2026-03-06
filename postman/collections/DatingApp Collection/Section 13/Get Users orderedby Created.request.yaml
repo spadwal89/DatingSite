@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{url}}/api/members?orderBy=created"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  - key: orderBy
+    value: created
+  - key: gender
+    value: female
+    disabled: true
+order: 8000

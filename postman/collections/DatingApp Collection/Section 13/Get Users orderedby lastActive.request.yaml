@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{url}}/api/members?orderBy=lastActive"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  - key: orderBy
+    value: lastActive
+  - key: gender
+    value: female
+    disabled: true
+order: 9000

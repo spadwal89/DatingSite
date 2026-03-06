@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/admin/users-with-roles"
+method: GET
+order: 11000

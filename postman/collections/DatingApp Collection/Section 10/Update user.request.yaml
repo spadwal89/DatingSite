@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{url}}/api/members"
+method: PUT
+headers:
+  Authorization: Bearer {{token}}
+body:
+  type: json
+  content: |-
+    {
+        "displayName": "Lisa 2",
+    	"description": "Updated intro again again",
+    	"city": "Updated city",
+    	"country": "Updated country"
+    }
+order: 2000

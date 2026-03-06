@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/admin/photos-to-moderate"
+method: GET
+order: 12000

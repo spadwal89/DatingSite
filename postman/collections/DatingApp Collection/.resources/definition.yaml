@@ -1,0 +1,5 @@
+$kind: collection
+variables:
+  url: https://localhost:5001
+  cloudName: dj3wmuy3l
+  signature: ""

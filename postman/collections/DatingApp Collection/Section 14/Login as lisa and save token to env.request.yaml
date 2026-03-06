@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{url}}/api/account/login"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+    	"email": "lisa@test.com",
+    	"password": "Pa$$w0rd"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      const user = pm.response.json();
+
+      pm.test("Has properties", function () {
+          pm.expect(user).to.have.property('username');
+          pm.expect(user).to.have.property('token');
+      });
+
+      if (pm.test("Has properties")) {
+          pm.globals.set('token', user.token);
+      }
+    language: text/javascript
+order: 1000

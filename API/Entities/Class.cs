@@ -2,7 +2,7 @@ using System;
 
 namespace API.Entities;
 
-public class AppUser
+public class AppUserq
 {
     public string ID {get ; set;}=Guid.NewGuid().ToString();
     public required string DisplayName{get;set;}

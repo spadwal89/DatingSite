@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://localhost:5001/api/account/register
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "gender": "male",
+        "email": "bob@test.com",
+        "displayName": "Bob",
+        "dateOfBirth": "1985-01-23",
+        "city": "London",
+        "country": "UK",
+        "password": "Pa$$w0rd"
+    }
+order: 6000

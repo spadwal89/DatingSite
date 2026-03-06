@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{url}}/api/messages"
+method: POST
+headers:
+  Authorization: Bearer {{todd_token}}
+body:
+  type: json
+  content: |-
+    {
+        "recipientId": "lisa-id",
+        "content": "Test message from Todd to Lisa"
+    }
+order: 4000

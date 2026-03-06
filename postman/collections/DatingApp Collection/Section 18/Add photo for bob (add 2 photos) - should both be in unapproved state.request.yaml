@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{url}}/api/members/add-photo"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: File
+      src:
+        - /Users/neil/Projects/ReventsCourse/ApiPhotos/bat2.jpg
+order: 11000

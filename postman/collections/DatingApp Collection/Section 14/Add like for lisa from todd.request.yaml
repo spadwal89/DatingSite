@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{url}}/api/likes/lisa-id"
+method: POST
+headers:
+  Authorization: Bearer {{todd_token}}
+body:
+  type: json
+  content: "{}"
+order: 4000

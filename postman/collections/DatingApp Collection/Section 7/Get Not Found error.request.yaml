@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/buggy/not-found"
+method: GET
+order: 3000

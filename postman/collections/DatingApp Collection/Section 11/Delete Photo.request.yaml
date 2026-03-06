@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{url}}/api/members/delete-photo/11"
+method: DELETE
+headers:
+  Authorization: Bearer {{token}}
+order: 6000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/admin/reject-photo/12"
+method: POST
+order: 8000

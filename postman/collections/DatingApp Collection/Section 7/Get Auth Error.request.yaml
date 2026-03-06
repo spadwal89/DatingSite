@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{url}}/api/buggy/auth"
+method: GET
+order: 2000

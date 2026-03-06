@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{url}}/api/account/logout"
+method: POST
+body:
+  type: json
+  content: ""
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Has Set-Cookie header", function () {
+          const cookies = pm.response.headers.get('Set-Cookie');
+          pm.expect(cookies).to.include('.AspNetCore.Identity.Application=');
+      });
+    language: text/javascript
+order: 5000

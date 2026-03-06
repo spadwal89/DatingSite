@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{url}}/api/members?pageNumber=1&pageSize=5"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  pageNumber: "1"
+  pageSize: "5"
+order: 3000

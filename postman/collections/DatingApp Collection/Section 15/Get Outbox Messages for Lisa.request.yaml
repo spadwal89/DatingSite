@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{url}}/api/messages?container=Outbox"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  container: Outbox
+order: 7000

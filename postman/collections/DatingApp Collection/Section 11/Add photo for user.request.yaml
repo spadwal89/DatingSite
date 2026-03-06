@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{url}}/api/members/add-photo"
+method: POST
+headers:
+  Authorization: Bearer {{token}}
+body:
+  type: formdata
+  content:
+    - type: file
+      key: File
+      src:
+        - /Users/neil/Library/CloudStorage/SynologyDrive-Projects/work/DatingAppCourse/ApiPhotos/wonder3.jpg
+order: 2000

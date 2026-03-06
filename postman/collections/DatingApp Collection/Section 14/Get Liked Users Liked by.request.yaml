@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{url}}/api/likes?predicate=likedBy"
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+queryParams:
+  predicate: likedBy
+order: 6000
